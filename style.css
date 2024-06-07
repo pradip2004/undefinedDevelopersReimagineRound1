@@ -1,0 +1,83 @@
+*{
+      margin:0;
+      padding :0;
+      box-sizing: border-box;
+  }
+  
+  
+  .hero_section{
+      background-color: rgb(214, 176, 79);
+      max-height: 100vh;
+      width: 100%;
+      padding: 2vw 7vw;
+  }
+  
+  .navbar {
+      background-color: transparent;
+      height: fit-content;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* background-color: red; */
+  }
+  
+  .nav_logo > img {
+      height: fit-content;
+      width: 9.3vw;
+  }
+  .nav_menu> img{
+      height: 2.4vw;
+      width: 2.4vw;
+  }
+  
+  .container {
+      height: 85vh;
+      display: flex;
+      justify-content: space-between;
+      /* background-color: green; */
+  }
+  .hero_heading{
+    /* background-color: orange; */
+    width: 40%;
+  }
+  
+  .hero_heading h1{
+      
+      font-size: 5.7rem;
+      line-height: 5.7rem;
+      margin-top: 2.5vw;
+      color: rgb(46, 34, 2);
+  }
+  
+  .hero_heading  p {
+      font-size: 1.8rem;
+      width: 80%;
+      margin-top: 1vw;
+      color: rgb(46, 34, 2);  
+  }
+  .right_container .bee_img{
+    position: absolute;
+    top: -5%;
+    left: -10%;
+  }
+  .bee_img>img{
+    height: 200px;
+    width: 200px;
+  }
+  .right_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right_container .hero_img> img{
+    /* position: absolute; */
+    width: 42rem;
+    height: 40rem;
+    margin-top: -5%;
+  }
+  
+  
+  
+  
