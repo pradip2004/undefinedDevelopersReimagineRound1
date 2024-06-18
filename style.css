@@ -1156,6 +1156,12 @@
 
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .btn {
+        font-size: 1.5vw;
+        padding: 1.5vw 2.5vw;
+        margin-top: 2.5vw;
+    }
+
     .heading_title {
         font-size: 3.5vw;
         color: #5A4522;
@@ -1240,6 +1246,121 @@
         font-size: 1.4vw;
     }
 
-/* *********PRODUCT TRACK SECTION******** */
+    /* *********PRODUCT TRACK SECTION******** */
+    .product_track_title {
+        font-size: 4.5vw;
+        width: 80%;
+        line-height: 4.8vw;
+    }
+
+    .product_track_overlay {
+        width: 6rem;
+        left: 63%;
+        top: 45%;
+    }
+
+    /* *********PRODUCT TRACK SMALL SECTION******** */
+    .product_popup_section {
+        width: 40rem;
+        height: 28rem;
+    }
+
+    .product_popup_section_close {
+        width: 2rem;
+        height: 2rem;
+        /* background-color: red; */
+    }
+
+    .product_popup_section_desc {
+        font-size: 1.5vw;
+        width: 30%;
+    }
+
+/* *********ABOUT HONEY SECTION******** */
+.about_honey_section {
+    padding: 0;
+}
+.about_honey_section_left {
+    padding: 2vw 3vw;
+}
+.about_honey_title {
+    font-size: 2.5rem;
+}
+.about_honey_year_title {
+    font-size: 7rem;
+}
+.about_honey_img_container {
+    height: 40vh;
+    width: 40vw;
+    margin-top: -2vw;
+}
+.about_honey_section_right {
+    padding: 2vw 3vw;
+}
+.about_honey_historyBox {
+    width: 90%;
+}
+.about_honey_historyBox_desc {
+    padding: 1.5vw;
+    display: flex;
+    align-items: center;
+    color: #5A4522;
+    font-weight: 500;
+}
+
+/* *********HONEY NEUTRATION SECTION******** */
+.honey_neutration_bgtext {
+    font-size: 7rem;
+}
+.honey_neutration_img>img {
+    transform: scale(0.8);
+}
+.honey_neutration_overlay_1 {
+    width: 7rem;
+}
+
+.honey_neutration_overlay_2 {
+    width: 7rem;
+}
+
+.honey_neutration_overlay_3 {
+    width: 7rem;
+}
+
+.honey_neutration_overlay_4 {
+    width: 7rem;
+    right: 35%;
+}
+.honey_neutration_overlay_text {
+    font-size: 1.6rem;
+}
+.honey_neutration_overlay_text_1 {
+    top: 28%;
+    left: 18%;
+    transform: rotate(10deg);
+}
+
+.honey_neutration_overlay_text_2 {
+    top: 68%;
+    left: 10%;
+    transform: rotate(10deg);
+
+}
+
+.honey_neutration_overlay_text_3 {
+    top: 24%;
+    right: 12%;
+    transform: rotate(20deg);
+}
+
+.honey_neutration_overlay_text_4 {
+    top: 60%;
+    right: 23%;
+    transform: rotate(-10deg);
+
+}
+
+/* *********BEE SECTION******** */
+
 
 }
