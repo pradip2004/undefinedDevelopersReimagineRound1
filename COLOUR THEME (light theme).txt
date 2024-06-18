@@ -15,6 +15,5 @@ Product
 (sm)Trace Honey
 Bees
 Honey
-Kitchen
 About
 Contact

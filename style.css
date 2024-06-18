@@ -1169,10 +1169,6 @@
         min-height: 100vh;
     }
 
-    .container {
-        background-color: red;
-    }
-
     .hero_heading h1 {
         font-size: 4rem;
         line-height: 4.1rem;
@@ -1388,18 +1384,22 @@
     .slide_rext_group_text {
         font-size: 0.8rem;
     }
+
     .slide2_text_group1 {
         top: 15%;
         left: 15%;
     }
+
     .slide2_text_group2 {
         top: 18%;
         right: 15%;
     }
+
     .slide2_text_group4 {
         left: 58%;
         top: 58%;
     }
+
     .slide2_text_group4>.slide_rext_group_text {
         padding-top: 4.4vw;
     }
@@ -1414,31 +1414,56 @@
         width: 8rem;
         height: 8rem;
     }
+
     .slide_text_group_title {
         font-size: 2vw;
     }
-    .slide_text_group_text{
+
+    .slide_text_group_text {
         font-size: 1.8vw;
     }
+
     .slide3_text_group1 {
         flex-direction: column;
         top: 15%;
         left: 20%;
     }
-    
+
     .slide3_text_group2 {
         flex-direction: column;
         top: 20%;
         right: 13%;
     }
-    
+
     .slide3_text_group3 {
         flex-direction: column;
         bottom: 10%;
         left: 40%;
     }
 
-/* *********CONTACT US SECTION******** */
+    /* *********CONTACT US SECTION******** */
+    .contact_us_section {
+        margin: 25vw 0;
+    }
 
-    
+    .contact_us_section_bgimg {
+        width: 8rem;
+        top: -48%;
+        left: 5%;
+    }
+
+    .contect_us_section_left {
+        padding: 3.5vw 0;
+    }
+
+    .contect_us_section_title {
+        font-size: 4vw;
+        width: 100%;
+        line-height: 4.2vw;
+    }
+
+    .contect_us_section_text {
+        font-size: 0.8rem;
+        width: 12rem;
+    }
 }
