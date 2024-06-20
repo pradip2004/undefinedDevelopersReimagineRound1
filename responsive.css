@@ -1,0 +1,772 @@
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .btn {
+          font-size: 1.5vw;
+          padding: 1.5vw 2.5vw;
+          margin-top: 2.5vw;
+      }
+  
+      .heading_title {
+          font-size: 3.5vw;
+          color: #5A4522;
+      }
+  
+      .small_section {
+          padding: 1vw 7vw;
+          margin: 5vh 0;
+      }
+  
+  
+      /* *********HERO SECTION******** */
+  
+      .nav_logo>img {
+          height: fit-content;
+          width: 10vw;
+      }
+      
+      .nav_menu>img {
+          height: 3vw;
+          width: 3vw;
+      }
+      .section {
+          width: 100%;
+          padding: 4vw 5vw;
+          min-height: 100vh;
+      }
+  
+      .hero_heading h1 {
+          font-size: 5rem;
+          line-height: 5.1rem;
+          /* margin-top: -20%; */
+      }
+  
+      .hero_heading p {
+          font-size: 1.2rem;
+          margin-top: 2vw;
+      }
+  
+      .right_container .hero_img>img {
+          width: 27rem;
+          height: 25rem;
+          margin-top: -5%;
+          margin-left: 5%;
+      }
+  
+      .bee_img>img {
+          height: 17vw;
+          width: 17vw;
+      }
+  
+      .right_container .bee_img {
+          top: 4%;
+          left: 8%;
+      }
+  
+      /* *********PRODUCT SECTION******** */
+      .product_add_cart_icon {
+          width: 3vw;
+          height: 3vw;
+          font-size: 2vw;
+      }
+  
+      .product_section {
+          min-height: 90vh;
+      }
+  
+      .product_title {
+          font-size: 1.7vw;
+          line-height: 3vw;
+      }
+  
+      .product_desc {
+          font-size: 1.3vw;
+          line-height: 1.5vw;
+          font-weight: 400;
+          width: 90%;
+          margin-top: 0.5vw;
+      }
+  
+      .product_title_container {
+          padding: 1vw 1.5vw;
+          padding-top: 1.5vw;
+      }
+  
+      .product_price {
+          padding: 0.5vw 1.5vw;
+          text-transform: uppercase;
+          font-size: 1.4vw;
+      }
+  
+      /* *********PRODUCT TRACK SECTION******** */
+      .product_track_title {
+          font-size: 4.5vw;
+          width: 80%;
+          line-height: 4.8vw;
+      }
+  
+      .product_track_overlay {
+          width: 6rem;
+          left: 63%;
+          top: 45%;
+      }
+  
+      /* *********PRODUCT TRACK SMALL SECTION******** */
+      .product_popup_section {
+          width: 40rem;
+          height: 28rem;
+      }
+  
+      .product_popup_section_close {
+          width: 2rem;
+          height: 2rem;
+          /* background-color: red; */
+      }
+  
+      .product_popup_section_desc {
+          font-size: 1.5vw;
+          width: 30%;
+      }
+  
+      /* *********ABOUT HONEY SECTION******** */
+      .about_honey_section {
+          padding: 0;
+      }
+  
+      .about_honey_section_left {
+          padding: 2vw 3vw;
+      }
+  
+      .about_honey_title {
+          font-size: 2.5rem;
+      }
+  
+      .about_honey_year_title {
+          font-size: 7rem;
+      }
+  
+      .about_honey_img_container {
+          height: 40vh;
+          width: 40vw;
+          margin-top: -2vw;
+      }
+  
+      .about_honey_section_right {
+          padding: 2vw 3vw;
+      }
+  
+      .about_honey_historyBox {
+          width: 90%;
+      }
+  
+      .about_honey_historyBox_desc {
+          padding: 1.5vw;
+          display: flex;
+          align-items: center;
+          color: #5A4522;
+          font-weight: 500;
+      }
+  
+      /* *********HONEY NEUTRATION SECTION******** */
+      .honey_neutration_bgtext {
+          font-size: 7rem;
+      }
+  
+      .honey_neutration_img>img {
+          transform: scale(0.8);
+      }
+  
+      .honey_neutration_overlay_1 {
+          width: 7rem;
+      }
+  
+      .honey_neutration_overlay_2 {
+          width: 7rem;
+      }
+  
+      .honey_neutration_overlay_3 {
+          width: 7rem;
+      }
+  
+      .honey_neutration_overlay_4 {
+          width: 7rem;
+          right: 35%;
+      }
+  
+      .honey_neutration_overlay_text {
+          font-size: 1.6rem;
+      }
+  
+      .honey_neutration_overlay_text_1 {
+          top: 28%;
+          left: 18%;
+          transform: rotate(10deg);
+      }
+  
+      .honey_neutration_overlay_text_2 {
+          top: 68%;
+          left: 10%;
+          transform: rotate(10deg);
+  
+      }
+  
+      .honey_neutration_overlay_text_3 {
+          top: 24%;
+          right: 12%;
+          transform: rotate(20deg);
+      }
+  
+      .honey_neutration_overlay_text_4 {
+          top: 60%;
+          right: 23%;
+          transform: rotate(-10deg);
+  
+      }
+  
+      /* *********BEE SECTION******** */
+      .bee_section_img_cover>img {
+          clip-path: circle(15% at 30% 52%);
+      }
+  
+      /* *********ABOUT US SECTION******** */
+      .slide-img {
+          width: 12rem;
+          height: 12rem;
+      }
+  
+      .slide_overlay_heading {
+          font-size: 12vw;
+      }
+  
+      .slide_text_group {
+          width: 15rem;
+      }
+  
+      .slide_text_group_num {
+          width: 2rem;
+          height: 2rem;
+          top: 0;
+      }
+  
+      .slide_rext_group_text {
+          font-size: 0.8rem;
+      }
+  
+      .slide2_text_group1 {
+          top: 15%;
+          left: 15%;
+      }
+  
+      .slide2_text_group2 {
+          top: 18%;
+          right: 15%;
+      }
+  
+      .slide2_text_group4 {
+          left: 58%;
+          top: 58%;
+      }
+  
+      .slide2_text_group4>.slide_rext_group_text {
+          padding-top: 4.4vw;
+      }
+  
+      .slide3 .slide3-img2 {
+          transform: translateX(-50%) translateY(25%);
+          width: 10rem;
+          height: 10rem;
+      }
+  
+      .slide3 .slide3-img1 {
+          width: 8rem;
+          height: 8rem;
+      }
+  
+      .slide_text_group_title {
+          font-size: 2vw;
+      }
+  
+      .slide_text_group_text {
+          font-size: 1.8vw;
+      }
+  
+      .slide3_text_group1 {
+          flex-direction: column;
+          top: 15%;
+          left: 20%;
+      }
+  
+      .slide3_text_group2 {
+          flex-direction: column;
+          top: 20%;
+          right: 13%;
+      }
+  
+      .slide3_text_group3 {
+          flex-direction: column;
+          bottom: 10%;
+          left: 40%;
+      }
+  
+      /* *********CONTACT US SECTION******** */
+      .contact_us_section {
+          margin: 25vw 0;
+      }
+  
+      .contact_us_section_bgimg {
+          width: 8rem;
+          top: -48%;
+          left: 5%;
+      }
+  
+      .contect_us_section_left {
+          padding: 3.5vw 0;
+      }
+  
+      .contect_us_section_title {
+          font-size: 4vw;
+          width: 100%;
+          line-height: 4.2vw;
+      }
+  
+      .contect_us_section_text {
+          font-size: 0.8rem;
+          width: 12rem;
+      }
+  
+  /* *********FOOTER SECTION******** */
+  .footer_section {
+      margin-top: 35vw;
+      height: 70vh;
+      
+  }
+  .footer_waves {
+      top: -28%;
+  }
+  .footer_waves>img {
+      width: 100vw;
+  }
+  .footer_bee_img {
+      width: 9rem;
+      height: 9rem;
+      top: 5%;
+      left: 10%;
+  }
+  
+  .footer_flower_img {
+      height: 18rem;
+      
+  }
+  .div2 {
+      padding: 3vw 1vw;
+  }
+  .div3 {
+      padding: 3vw 5vw;
+      padding-right: 12vw;
+  }
+  .footer_menu {
+      padding: 3vw 1vw;
+  }
+  .f_menu {
+      height: 3.2vw;
+  }
+  .f_menu h1 {
+      font-size: 3vw;
+  }
+  
+  .footer_text_part2 {
+      font-size: 1rem;
+  }
+  
+  .social_link {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 1.4vw;
+  }
+  .div5>.footer_text_part2 {
+      width: 12rem;
+  }
+  
+  .footer_goto_btn_fixed {
+      width: 4.5rem;
+      height: 4.5rem;
+  }
+  
+  .footer_goto_btn_float {
+      width: 2.5rem;
+      height: 2.5rem;
+  }
+  
+  }
+
+  
+@media only screen and (min-width: 1024px) {
+      .btn {
+          font-size: 1.5vw;
+          padding: 1.5vw 2.5vw;
+          margin-top: 2.5vw;
+      }
+      /* *********HERO SECTION******** */
+  
+      .nav_logo>img {
+          height: fit-content;
+          width: 12vw;
+      }
+      
+      .nav_menu>img {
+          height: 3.2vw;
+          width: 3.2vw;
+      }
+      .section {
+          width: 100%;
+          padding: 4vw 7vw;
+          min-height: 100vh;
+      }
+  
+      .hero_heading h1 {
+          font-size: 6rem;
+          line-height: 6.1rem;
+          /* margin-top: -20%; */
+      }
+  
+      .hero_heading p {
+          font-size: 1.2rem;
+          margin-top: 2vw;
+      }
+  
+      .right_container .hero_img>img {
+          width: 29rem;
+          height: 27rem;
+          margin-top: -5%;
+          margin-left: 5%;
+      }
+  
+      .bee_img>img {
+          height: 14vw;
+          width: 14vw;
+      }
+  
+      .right_container .bee_img {
+          top: 3%;
+          left: 5%;
+      }
+      /* *********PRODUCT SECTION******** */
+      .product_add_cart_icon {
+          width: 3vw;
+          height: 3vw;
+          font-size: 2vw;
+      }
+  
+      .product_title {
+          font-size: 1.5vw;
+          line-height: 3.3vw;
+      }
+  
+      .product_desc {
+          font-size: 1.1vw;
+          line-height: 1.1vw;
+          font-weight: 400;
+          width: 90%;
+          margin-top: 0.5vw;
+  
+      }
+  
+      .product_title_container {
+          padding: 1vw 1.5vw;
+          padding-top: 1.5vw;
+      }
+  
+      .product_price {
+          padding: 0.5vw 1.5vw;
+          text-transform: uppercase;
+          font-size: 1vw;
+      }
+  
+       /* *********PRODUCT TRACK SECTION******** */
+       .product_track_title {
+          font-size: 4.2vw;
+          width: 80%;
+          line-height: 4.8vw;
+      }
+  
+      .product_track_overlay {
+          width: 7rem;
+          left: 63%;
+          top: 45%;
+      }
+      /* *********PRODUCT TRACK SMALL SECTION******** */
+      .product_popup_section {
+          width: 45rem;
+          height: 33rem;
+      }
+  
+      .product_popup_section_close {
+          width: 2.2rem;
+          height: 2.2rem;
+          /* background-color: red; */
+      }
+  
+      .product_popup_section_desc {
+          font-size: 1.3vw;
+          width: 35%;
+      }
+  
+      /* *********ABOUT HONEY SECTION******** */
+      .about_honey_section {
+          padding: 0;
+      }
+  
+      .about_honey_section_left {
+          padding: 2vw 3vw;
+      }
+  
+      .about_honey_title {
+          font-size: 2.5rem;
+      }
+  
+      .about_honey_year_title {
+          font-size: 7rem;
+      }
+  
+      .about_honey_img_container {
+          height: 40vh;
+          width: 40vw;
+          margin-top: -2vw;
+      }
+  
+      .about_honey_section_right {
+          padding: 2vw 5vw;
+      }
+  
+      .about_honey_historyBox {
+          width: 90%;
+      }
+  
+      .about_honey_historyBox_desc {
+          padding: 1.5vw;
+          display: flex;
+          align-items: center;
+          color: #5A4522;
+          font-weight: 500;
+      }
+  
+       /* *********HONEY NEUTRATION SECTION******** */
+       .honey_neutration_bgtext {
+          font-size: 8rem;
+      }
+  
+      .honey_neutration_img>img {
+          transform: scale(0.9);
+      }
+  
+      .honey_neutration_overlay_1 {
+          width: 8rem;
+          left: 25%;
+          top: 35%;
+      }
+  
+      .honey_neutration_overlay_2 {
+          width: 8rem;
+          left: 25%;
+          top: 50%;
+      }
+  
+      .honey_neutration_overlay_3 {
+          width: 8rem;
+          right: 25%;
+      }
+  
+      .honey_neutration_overlay_4 {
+          width: 8rem;
+          right: 35%;
+      }
+  
+      .honey_neutration_overlay_text {
+          font-size: 1.8rem;
+      }
+  
+      .honey_neutration_overlay_text_1 {
+          top: 30%;
+          left: 21%;
+          transform: rotate(10deg);
+      }
+  
+      .honey_neutration_overlay_text_2 {
+          top: 69%;
+          left: 15%;
+          transform: rotate(10deg);
+  
+      }
+  
+      .honey_neutration_overlay_text_3 {
+          top: 25%;
+          right: 15%;
+          transform: rotate(20deg);
+      }
+  
+      .honey_neutration_overlay_text_4 {
+          top: 60%;
+          right: 23%;
+          transform: rotate(-10deg);
+  
+      }
+  
+      /* *********ABOUT US SECTION******** */
+      .slide-img {
+          width: 12rem;
+          height: 12rem;
+      }
+  
+      .slide_overlay_heading {
+          font-size: 12vw;
+      }
+  
+      .slide_text_group {
+          width: 18rem;
+      }
+  
+      .slide_text_group_num {
+          width: 2.5rem;
+          height: 2.5rem;
+          top: 0;
+      }
+  
+      .slide_rext_group_text {
+          font-size: 1rem;
+      }
+  
+      .slide2_text_group1 {
+          top: 15%;
+          left: 15%;
+      }
+  
+      .slide2_text_group2 {
+          top: 18%;
+          right: 15%;
+      }
+      .slide2_text_group3 {
+          top: 67%;
+      }
+      .slide2_text_group4 {
+          left: 59%;
+          top: 62%;
+      }
+  
+      .slide2_text_group4>.slide_rext_group_text {
+          padding-top: 4.4vw;
+      }
+  
+      .slide3 .slide3-img2 {
+          transform: translateX(-60%) translateY(35%);
+          width: 15rem;
+          height: 15rem;
+      }
+  
+      .slide3 .slide3-img1 {
+          width: 10rem;
+          height: 10rem;
+      }
+  
+      .slide_text_group_title {
+          font-size: 2vw;
+      }
+  
+      .slide_text_group_text {
+          font-size: 1.8vw;
+          width: 80%;
+      }
+  
+      .slide3_text_group1 {
+          flex-direction: column;
+          top: 15%;
+          left: 20%;
+      }
+  
+      .slide3_text_group2 {
+          flex-direction: column;
+          top: 22%;
+          right: 10%;
+      }
+  
+      .slide3_text_group3 {
+          flex-direction: column;
+          bottom: 10%;
+          left: 40%;
+      }
+  
+      .slide_rext_group_text{
+          font-size: 1.6vw;
+      }
+  
+      .slide4_text_group2 {
+          bottom: 10%;
+          right: 20%;
+      }
+      /* *********FOOTER SECTION******** */
+  .footer_section {
+      margin-top: 25vw;
+      height: 70vh;
+      
+  }
+  .footer_waves {
+      top: -38%;
+  }
+  .footer_waves>img {
+      width: 100vw;
+  }
+  .footer_bee_img {
+      width: 10rem;
+      height: 10rem;
+      top: 0%;
+      left: 10%;
+  }
+  
+  .footer_flower_img {
+      height: 20rem;
+      
+  }
+  .div2 {
+      padding: 3vw 1vw;
+  }
+  .div3 {
+      padding: 3vw 5vw;
+      padding-right: 12vw;
+  }
+  .footer_menu {
+      padding: 3vw 1vw;
+  }
+  .f_menu {
+      height: 3.2vw;
+  }
+  .f_menu h1 {
+      font-size: 3vw;
+  }
+  
+  .footer_text_part2 {
+      font-size: 1.2rem;
+  }
+  
+  .social_link {
+      width: 2.5rem;
+      height: 2.5rem;
+      margin-right: 1.4vw;
+  }
+  .div5>.footer_text_part2 {
+      width: 12rem;
+  }
+  
+  .footer_goto_btn_fixed {
+      width: 4.5rem;
+      height: 4.5rem;
+  }
+  
+  .footer_goto_btn_float {
+      width: 2.5rem;
+      height: 2.5rem;
+  }
+  
+  
+  }
+  
+
+  @media only screen and (min-width: 1440px){
+      
+  }
