@@ -1147,7 +1147,7 @@
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 820px) and (max-width: 1024px) {
     .btn {
         font-size: 1.5vw;
         padding: 1.5vw 2.5vw;
@@ -1164,8 +1164,18 @@
         margin: 5vh 0;
     }
 
+
     /* *********HERO SECTION******** */
 
+    .nav_logo>img {
+        height: fit-content;
+        width: 10vw;
+    }
+    
+    .nav_menu>img {
+        height: 3vw;
+        width: 3vw;
+    }
     .section {
         width: 100%;
         padding: 4vw 5vw;
@@ -1174,13 +1184,13 @@
 
     .hero_heading h1 {
         font-size: 5rem;
-        line-height: 4.1rem;
-        margin-top: -20%;
+        line-height: 5.1rem;
+        /* margin-top: -20%; */
     }
 
     .hero_heading p {
         font-size: 1.2rem;
-        margin-top: 4vw;
+        margin-top: 2vw;
     }
 
     .right_container .hero_img>img {
@@ -1213,7 +1223,7 @@
 
     .product_title {
         font-size: 1.7vw;
-        line-height: 2.5vw;
+        line-height: 3vw;
     }
 
     .product_desc {
@@ -1221,6 +1231,7 @@
         line-height: 1.5vw;
         font-weight: 400;
         width: 90%;
+        margin-top: 0.5vw;
     }
 
     .product_title_container {
@@ -1532,5 +1543,221 @@
     width: 2.5rem;
     height: 2.5rem;
 }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.5vw;
+        padding: 1.5vw 2.5vw;
+        margin-top: 2.5vw;
+    }
+    /* *********HERO SECTION******** */
+
+    .nav_logo>img {
+        height: fit-content;
+        width: 12vw;
+    }
+    
+    .nav_menu>img {
+        height: 3.2vw;
+        width: 3.2vw;
+    }
+    .section {
+        width: 100%;
+        padding: 4vw 7vw;
+        min-height: 100vh;
+    }
+
+    .hero_heading h1 {
+        font-size: 6rem;
+        line-height: 6.1rem;
+        /* margin-top: -20%; */
+    }
+
+    .hero_heading p {
+        font-size: 1.2rem;
+        margin-top: 2vw;
+    }
+
+    .right_container .hero_img>img {
+        width: 29rem;
+        height: 27rem;
+        margin-top: -5%;
+        margin-left: 5%;
+    }
+
+    .bee_img>img {
+        height: 14vw;
+        width: 14vw;
+    }
+
+    .right_container .bee_img {
+        top: 3%;
+        left: 5%;
+    }
+    /* *********PRODUCT SECTION******** */
+    .product_add_cart_icon {
+        width: 3vw;
+        height: 3vw;
+        font-size: 2vw;
+    }
+
+    .product_title {
+        font-size: 1.5vw;
+        line-height: 3.3vw;
+    }
+
+    .product_desc {
+        font-size: 1.1vw;
+        line-height: 1.1vw;
+        font-weight: 400;
+        width: 90%;
+        margin-top: 0.5vw;
+
+    }
+
+    .product_title_container {
+        padding: 1vw 1.5vw;
+        padding-top: 1.5vw;
+    }
+
+    .product_price {
+        padding: 0.5vw 1.5vw;
+        text-transform: uppercase;
+        font-size: 1vw;
+    }
+
+     /* *********PRODUCT TRACK SECTION******** */
+     .product_track_title {
+        font-size: 4.2vw;
+        width: 80%;
+        line-height: 4.8vw;
+    }
+
+    .product_track_overlay {
+        width: 7rem;
+        left: 63%;
+        top: 45%;
+    }
+    /* *********PRODUCT TRACK SMALL SECTION******** */
+    .product_popup_section {
+        width: 45rem;
+        height: 33rem;
+    }
+
+    .product_popup_section_close {
+        width: 2.2rem;
+        height: 2.2rem;
+        /* background-color: red; */
+    }
+
+    .product_popup_section_desc {
+        font-size: 1.3vw;
+        width: 35%;
+    }
+
+    /* *********ABOUT HONEY SECTION******** */
+    .about_honey_section {
+        padding: 0;
+    }
+
+    .about_honey_section_left {
+        padding: 2vw 3vw;
+    }
+
+    .about_honey_title {
+        font-size: 2.5rem;
+    }
+
+    .about_honey_year_title {
+        font-size: 7rem;
+    }
+
+    .about_honey_img_container {
+        height: 40vh;
+        width: 40vw;
+        margin-top: -2vw;
+    }
+
+    .about_honey_section_right {
+        padding: 2vw 5vw;
+    }
+
+    .about_honey_historyBox {
+        width: 90%;
+    }
+
+    .about_honey_historyBox_desc {
+        padding: 1.5vw;
+        display: flex;
+        align-items: center;
+        color: #5A4522;
+        font-weight: 500;
+    }
+
+     /* *********HONEY NEUTRATION SECTION******** */
+     .honey_neutration_bgtext {
+        font-size: 8rem;
+    }
+
+    .honey_neutration_img>img {
+        transform: scale(0.9);
+    }
+
+    .honey_neutration_overlay_1 {
+        width: 8rem;
+        left: 25%;
+        top: 35%;
+    }
+
+    .honey_neutration_overlay_2 {
+        width: 8rem;
+        left: 25%;
+        top: 50%;
+    }
+
+    .honey_neutration_overlay_3 {
+        width: 8rem;
+        right: 25%;
+    }
+
+    .honey_neutration_overlay_4 {
+        width: 8rem;
+        right: 35%;
+    }
+
+    .honey_neutration_overlay_text {
+        font-size: 1.8rem;
+    }
+
+    .honey_neutration_overlay_text_1 {
+        top: 30%;
+        left: 21%;
+        transform: rotate(10deg);
+    }
+
+    .honey_neutration_overlay_text_2 {
+        top: 69%;
+        left: 15%;
+        transform: rotate(10deg);
+
+    }
+
+    .honey_neutration_overlay_text_3 {
+        top: 25%;
+        right: 15%;
+        transform: rotate(20deg);
+    }
+
+    .honey_neutration_overlay_text_4 {
+        top: 60%;
+        right: 23%;
+        transform: rotate(-10deg);
+
+    }
+
+    
+
 
 }
