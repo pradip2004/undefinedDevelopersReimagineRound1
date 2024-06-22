@@ -544,7 +544,7 @@
 .about_honey_historyBox_img {
     width: 40%;
     height: 100%;
-    padding: 1vw;
+    /* padding: 1vw; */
 }
 
 .about_honey_historyBox_img>img {
