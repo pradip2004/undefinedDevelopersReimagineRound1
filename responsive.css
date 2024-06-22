@@ -79,7 +79,7 @@
         /* position: absolute; */
         width: 202vw;
         height: 200vw;
-        margin-top: -5%;
+        margin-top: -2%;
     }
 
     /* *********PRODUCT SECTION******** */
@@ -362,6 +362,32 @@
     font-size: 5vw;
     width: 15rem;
 }
+
+/* *********CONTACT US SECTION******** */
+
+.contact_us_section {
+    margin: 60vw 0;
+}
+
+.contect_us_section_left {
+    padding: 8vw 0;
+}
+
+.contect_us_section_title {
+    font-size: 12vw;
+    width: 100%;
+    line-height: 12vw;
+}
+.contect_us_section_text {
+    font-size: 1.4rem;
+    color: #5A4522;
+    width: 15rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+/* *********FOOTER SECTION******** */
+
 
 }
 
@@ -775,7 +801,7 @@
 }
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1439px){
     .btn {
         font-size: 1.5vw;
         padding: 1.5vw 2.5vw;
@@ -1159,7 +1185,7 @@
 
 }
 
-
+/* 
 @media only screen and (min-width: 1440px) {
     .heading_title {
         font-size: 4vw;
@@ -1199,7 +1225,6 @@
     .product_popup_section_close {
         width: 4rem;
         height: 4rem;
-        /* background-color: red; */
     }
 
     .about_honey_section_right {
@@ -1273,6 +1298,5 @@
         color: #5A4522;
         font-size: 1.4rem;
         text-align: center;
-        /* margin: 1vw 0; */
     }
-}
+} */
