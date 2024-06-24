@@ -13,10 +13,12 @@
 
 <body>
       <div class="extented_nav">
-            <div class="close"></div>
+            <div class="close">
+                  <img src="./img/close_btn.png" alt="">
+            </div>
             <div class="extented_nav_part1">
                   <img src="./img/logo.png" class="e_logo">
-                  <video src="./bg-video.mp4" autoplay loop muted></video>
+                  <video src="" autoplay loop muted></video>
                   <div class="video_details">
                         <h2>Taste Our</h2>
                         <h2>Honey</h2>
@@ -34,10 +36,6 @@
                   <div class="e_menu">
                         <h1>Honey</h1>
                         <h1>Honey</h1>
-                  </div>
-                  <div class="e_menu">
-                        <h1>Kitchen</h1>
-                        <h1>Kitchen</h1>
                   </div>
                   <div class="e_menu">
                         <h1>Bee</h1>
@@ -79,6 +77,10 @@
                         <div class="hero_img">
                               <img src="img/hero_img-1.png" alt="">
                         </div>
+                        <svg id="beePathSvg" width="742" height="550" viewBox="0 0 742 550" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path id= "beePath" d="M414.502 0.5C428.902 311.7 -83.0107 175 12.4861 378.5C107.983 582 584.497 595 741.5 463.5" stroke="black" stroke-opacity="0.01"/>
+                              </svg>
+                              
                   </div>
 
 
@@ -599,7 +601,9 @@
 
 
 
-
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/MotionPathPlugin.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
       <script src="scripts.js"></script>
 </body>
