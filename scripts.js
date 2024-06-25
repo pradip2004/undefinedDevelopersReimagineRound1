@@ -1,3 +1,5 @@
+
+
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 4,
   spaceBetween: 30,
@@ -117,6 +119,46 @@ function productPageAnimation() {
     });
   });
 }
+
+// about us section
+let historyBox_data = [{
+  img: "./img/honeyHistory-1.jpg",
+  desc: "Dutch biologist and microscopist Jan Swammerdam’s study of honeybee anatomy and behavior began, providing a strong foundation for future bee studies."
+}, {
+  img: "./img/honeyHistory-1.jpg",
+  desc: "Dutch biologist and microscopist Jan Swammerdam’s study of honeybee anatomy and behavior began, providing a strong foundation for future bee studies."
+}, {
+  img: "./img/honeyHistory-1.jpg",
+  desc: "Dutch biologist and microscopist Jan Swammerdam’s study of honeybee anatomy and behavior began, providing a strong foundation for future bee studies."
+}, {
+  img: "./img/honeyHistory-1.jpg",
+  desc: "Dutch biologist and microscopist Jan Swammerdam’s study of honeybee anatomy and behavior began, providing a strong foundation for future bee studies."
+}, {
+  img: "./img/honeyHistory-1.jpg",
+  desc: "Dutch biologist and microscopist Jan Swammerdam’s study of honeybee anatomy and behavior began, providing a strong foundation for future bee studies."
+}, {
+  img: "./img/honeyHistory-1.jpg",
+  desc: "Dutch biologist and microscopist Jan Swammerdam’s study of honeybee anatomy and behavior began, providing a strong foundation for future bee studies."
+}]
+  
+let about_honey_right_content = document.querySelector(".about_honey_section_right_content");
+historyBox_data.forEach((historyBox) => {
+  let historyBoxElement = document.createElement('div');
+  historyBoxElement.classList.add('about_honey_historyBox');
+  historyBoxElement.innerHTML = `
+      <div class="about_honey_historyBox_img">
+          <img src="${historyBox.img}" alt="">
+      </div>
+      <div class="about_honey_historyBox_desc">
+          <p class="about_honey_historyBox_desc_text">
+              ${historyBox.desc}
+          </p>
+      </div>
+  `;
+  about_honey_right_content.appendChild(historyBoxElement);
+})
+
+
 
 let historyBox = document.querySelectorAll(".about_honey_historyBox");
 console.log(historyBox)
