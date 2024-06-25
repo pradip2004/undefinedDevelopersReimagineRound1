@@ -95,24 +95,47 @@ function homePageAnimation() {
 
 }
 
-
-const trace_honey_btn = document.querySelector(".trace_honey_btn");
-const product_popup = document.querySelector(".product_popup_section");
-const popup_close_btn = document.querySelector(".product_popup_section_close");
-trace_honey_btn.addEventListener("click", () => {
-  gsap.to(product_popup, {
-    duration: 0.5,
-    opacity: 1,
-    scale: 1,
-    visibility: "visible"
+function productPageAnimation() {
+  const trace_honey_btn = document.querySelector(".trace_honey_btn");
+  const product_popup = document.querySelector(".product_popup_section");
+  const popup_close_btn = document.querySelector(".product_popup_section_close");
+  trace_honey_btn.addEventListener("click", () => {
+    gsap.to(product_popup, {
+      duration: 0.5,
+      opacity: 1,
+      scale: 1,
+      visibility: "visible"
+    });
   });
-});
 
-popup_close_btn.addEventListener("click", () => {
-  gsap.to(product_popup, {
-    duration: 0.5,
-    scale: 0,
-    opacity: 0,
-    visibility: "hidden"
+  popup_close_btn.addEventListener("click", () => {
+    gsap.to(product_popup, {
+      duration: 0.5,
+      scale: 0,
+      opacity: 0,
+      visibility: "hidden"
+    });
   });
-});
+}
+
+let historyBox = document.querySelectorAll(".about_honey_historyBox");
+console.log(historyBox)
+
+historyBox.forEach((box) => {
+  let t1 = gsap.timeline({
+    scrollTrigger: {
+      trigger: box,
+      scroller: ".main",
+      markers: false,
+      start: "top 45%",
+      end: "top 20%",
+      scrub: 3
+    }
+  })
+
+  t1.to(box, {
+    backgroundColor: "#F6BE00"
+  })
+})
+
+productPageAnimation()

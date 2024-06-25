@@ -560,7 +560,7 @@
     width: 80%;
     height: 25vh;
     border: 1px solid #F6BE00;
-    /* background-color: #F6BE00; */
+    background-color: #fff;
     border-radius: 50px;
     display: flex;
     overflow: hidden;
