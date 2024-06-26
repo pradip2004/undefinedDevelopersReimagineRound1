@@ -140,7 +140,7 @@ let historyBox_data = [{
   img: "./img/honeyHistory-1.jpg",
   desc: "Dutch biologist and microscopist Jan Swammerdam’s study of honeybee anatomy and behavior began, providing a strong foundation for future bee studies."
 }]
-  
+
 let about_honey_right_content = document.querySelector(".about_honey_section_right_content");
 historyBox_data.forEach((historyBox) => {
   let historyBoxElement = document.createElement('div');
@@ -180,79 +180,81 @@ historyBox.forEach((box) => {
   })
 })
 
-productPageAnimation()
+
 
 // bee section
 
 const clipPaths = [
+  "inset(0)",
   "circle(10% at 57.5% 27%)",
   "circle(10% at 33% 65%)",
   "circle(10% at 60.5% 74%)",
   "circle(6% at 54% 48%)",
-  "circle(7% at 27% 69%)",
-  "circle(100% at 50% 50%)"
+  "circle(100%)",
+  // "circle(100% at 50% 50%)"
+  "inset(0)"
 ];
 const titles = [
+  "",
   "White woman",
   "Charrua Indigenous",
   "Jaguar",
   "Montevideo Hill",
-  "Ship",
   " "
 ];
 const descriptions = [
   {
-        text: "In the foreground, we see a woman with Caucasian features representing the homeland—a white, pure, radiant, and civilized homeland ascending triumphantly. Created in the image and likeness of a Europe that embodies everything the nation should admire and pursue for success.",
-        left: "5%",
-        top: "70%"
+    text: "",
+    position: ""
+  },
+  {
+    text: "In the foreground, we see a woman with Caucasian features representing the homeland—a white, pure, radiant, and civilized homeland ascending triumphantly. Created in the image and likeness of a Europe that embodies everything the nation should admire and pursue for success.",
+    left: "5%",
+    top: "70%"
 
   },
   {
-        text: "She is seated on a rock, at a higher level than the rest of the symbolic elements. She has a fabric draped over her body with the stripes of the national flag printed on it, stained with the blood of the Charrúa people. A flag that represents the patrician project of a nation-state born from the Charrúa genocide.",
-        left: "5%",
-        top: "30%"
+    text: "She is seated on a rock, at a higher level than the rest of the symbolic elements. She has a fabric draped over her body with the stripes of the national flag printed on it, stained with the blood of the Charrúa people. A flag that represents the patrician project of a nation-state born from the Charrúa genocide.",
+    left: "5%",
+    top: "30%"
   },
   {
-        text: "In the background or second layer, we see the stereotyped figure of an indigenous person in a fallen posture, looking up at the resplendent homeland.",
-        left: "50%",
-        top: "40%"
+    text: "In the background or second layer, we see the stereotyped figure of an indigenous person in a fallen posture, looking up at the resplendent homeland.",
+    left: "50%",
+    top: "40%"
   },
   {
-        text: "The woman is sitting on a jaguar skin, perhaps a rug that the indigenous person obediently placed for her to sit on. The jaguar skin represents the most dangerous and wild animal of these lands, which the indigenous person killed for and because of her.",
-        left: "5%",
-        top: "20%"
+    text: "The woman is sitting on a jaguar skin, perhaps a rug that the indigenous person obediently placed for her to sit on. The jaguar skin represents the most dangerous and wild animal of these lands, which the indigenous person killed for and because of her.",
+    left: "5%",
+    top: "20%"
   },
+
+
   {
-        text: "The figure of the Montevideo Hill fortress symbolizes for us the planting of the Spanish flag over the Charrúa people who fiercely resisted the establishment of this fort, symbolizing the beginning of settler colonialism, territorial dispossession.",
-        left: "50%",
-        top: "70%"
-  },
-  
-  {
-        text: "",
-        position: ""
+    text: "",
+    position: ""
   }
 ];
 
 // GSAP timeline for clip-path animations
 const clipPathTimeline = gsap.timeline({
   scrollTrigger: {
-        trigger: ".bee_section",
-        scroller: ".main",
-        pin: true,
-        start: "top top",
-        markers: false,
-        end: "+=380%",
-        scrub: 1
+    trigger: ".bee_section",
+    scroller: ".main",
+    pin: true,
+    start: "top top",
+    markers: false,
+    end: "+=380%",
+    scrub: 1
   },
   onUpdate: function () {
-        const progress = clipPathTimeline.progress();
-        const index = Math.floor(progress * (clipPaths.length - 1));
-        const description = descriptions[index];
-        document.querySelector('.bee_section_title').textContent = titles[index];
-        document.querySelector('.bee_section_desc').textContent = description.text;
-        document.querySelector('.bee_section_desc').style.left = description.left;
-        document.querySelector('.bee_section_desc').style.top = description.top;
+    const progress = clipPathTimeline.progress();
+    const index = Math.floor(progress * (clipPaths.length - 1));
+    const description = descriptions[index];
+    document.querySelector('.bee_section_title').textContent = titles[index];
+    document.querySelector('.bee_section_desc').textContent = description.text;
+    document.querySelector('.bee_section_desc').style.left = description.left;
+    document.querySelector('.bee_section_desc').style.top = description.top;
   }
 });
 
@@ -261,3 +263,48 @@ clipPaths.forEach((path, index) => {
   clipPathTimeline.to(".bee_section_img_cover img", { clipPath: path, duration: 1 }, index * 3);
 
 });
+
+gsap.to(".slide", {
+  scrollTrigger: {
+    trigger: ".about_section_container",
+    start: "top top",
+    end: "bottom bottom",
+    markers: false,
+    scrub: 2
+  },
+  xPercent: -300,
+  ease: Power4
+})
+
+
+
+//footer section
+function gotoTopBtn() {
+  const scrollToTopBtn = document.querySelector(".footer_goto_btn_fixed");
+  // console.log(scrollToTopBtn)
+  scrollToTopBtn.addEventListener("click", function () {
+    // alert("hi");
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth" // Smooth scroll
+    });
+  });
+
+}
+//add to cart notification
+function notificationPopup(){
+  document.addEventListener("DOMContentLoaded", function () {
+    const notifyBtn = document.getElementById("notifyBtn");
+    const notification = document.getElementById("notification");
+  
+    notifyBtn.addEventListener("click", function () {
+      notification.classList.add("show");
+  
+  
+      setTimeout(function () {
+        notification.classList.remove("show");
+      }, 2000);
+    });
+  });
+  
+}
