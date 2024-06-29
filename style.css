@@ -117,6 +117,7 @@
 .extented_nav_part1 .video_details {
     display: flex;
     align-items: center;
+    color: #5A4522;
     justify-content: space-between;
     width: 25vw;
     font-size: 0.8vw;
@@ -1045,15 +1046,6 @@ input:focus {
     justify-content: space-between;
 }
 
-.contact_us_section_bgimg {
-    position: absolute;
-    z-index: -1;
-    width: 10rem;
-    top: -52%;
-    transform: rotate(20deg);
-    left: 7%;
-
-}
 
 .contect_us_section_left {
     /* background-color: red; */

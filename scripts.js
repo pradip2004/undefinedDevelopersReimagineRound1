@@ -53,13 +53,26 @@ function navbarAnimation() {
       opacity: 0
     }, 'a');
   })
-  close.addEventListener('click', () => {
-    gsap.to(extented_nav, {
-      top: -3000,
-      duration: 1.5,
-      ease: "expo.out"
+  const screenWidth = window.outerWidth;
+  console.log(screenWidth)
+  if(screenWidth < 475){
+    close.addEventListener('click', () => {
+      gsap.to(extented_nav, {
+        top: -1700,
+        duration: 1.5,
+        ease: "expo.out"
+      })
     })
-  })
+  }else{
+    close.addEventListener('click', () => {
+      gsap.to(extented_nav, {
+        top: -500,
+        duration: 1.5,
+        ease: "expo.out"
+      })
+    })
+  }
+  
 
 }
 
@@ -268,7 +281,7 @@ let historyBox = document.querySelectorAll(".about_honey_historyBox");
 console.log(historyBox)
 const years = ["1990", "1995", "2000", "2005", "2010", "2015"];
 const screenWidth = window.outerWidth;
-console.log(screenWidth)
+// console.log(screenWidth)
 if(screenWidth < 475){
   historyBox.forEach((box, index) => {
     let t1 = gsap.timeline({
