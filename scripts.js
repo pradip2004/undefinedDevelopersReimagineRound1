@@ -14,9 +14,9 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 2,
       spaceBetween: 30,
     },
-    768: {
+    475: {
       slidesPerView: 3,
-      spaceBetween: 20,
+      spaceBetween: 40,
     },
     1024: {
       slidesPerView: 4,
@@ -55,8 +55,8 @@ function navbarAnimation() {
   })
   close.addEventListener('click', () => {
     gsap.to(extented_nav, {
-      top: -500,
-      duration: 1,
+      top: -3000,
+      duration: 1.5,
       ease: "expo.out"
     })
   })
@@ -267,7 +267,37 @@ historyBox_data.forEach((historyBox) => {
 let historyBox = document.querySelectorAll(".about_honey_historyBox");
 console.log(historyBox)
 const years = ["1990", "1995", "2000", "2005", "2010", "2015"];
-
+const screenWidth = window.outerWidth;
+console.log(screenWidth)
+if(screenWidth < 475){
+  historyBox.forEach((box, index) => {
+    let t1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: box,
+        scroller: ".main",
+        markers: false,
+        start: "top 70%",
+        end: "top 55%",
+        scrub: 3,
+        onEnter: () => {
+          // Update the year when the historyBox is triggered
+          updateYear(years[index]);
+        },
+  
+        onLeaveBack: () => {
+          // Update the year when scrolling back
+          updateYear(years[index - 1]);
+        }
+      }
+    })
+  
+    t1.to(box, {
+      backgroundColor: "#F6BE00"
+    })
+  
+    
+  })
+}
 historyBox.forEach((box, index) => {
   let t1 = gsap.timeline({
     scrollTrigger: {
@@ -438,17 +468,18 @@ homePageAnimation()
 navbarAnimation()
 productPageAnimation()
 notificationPopup()
+gotoTopBtn()
 
 
 // load svg in slide2
-const slide2 = document.querySelector(".slide2");
-const svgFilePath = './svg/missonArrow2.svg';
-fetch(svgFilePath)
-  .then(response => response.text())
-  .then(svgContent => {
-    slide2.innerHTML += svgContent;
-  })
-  .catch(error => console.error('Error fetching SVG:', error));
+// const slide2 = document.querySelector(".slide2");
+// const svgFilePath = './svg/missonArrow2.svg';
+// fetch(svgFilePath)
+//   .then(response => response.text())
+//   .then(svgContent => {
+//     slide2.innerHTML += svgContent;
+//   })
+//   .catch(error => console.error('Error fetching SVG:', error));
 
   
 

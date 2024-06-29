@@ -87,7 +87,7 @@
     height: 60vh;
     position: absolute;
     z-index: 101;
-    top: -100%;
+    top: -250vh;
     padding: 1vw 7vw;
     display: flex;
     align-items: center;
@@ -883,12 +883,6 @@ input:focus {
     rotate: 60deg;
 }
 
-.slide2 > svg{
-    width: 12vw;
-    position: absolute;
-    left: 60%;
-    top:10%;
-}
 .slide2_img2{
     right: 23%;
     top: 44%;
