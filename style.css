@@ -516,7 +516,7 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     font-size: 1vw;
-    
+
 }
 input:focus {
     outline: none;
@@ -1216,7 +1216,6 @@ input:focus {
         transform: translateY(-100%);
     }
 }
-
 
 
 
