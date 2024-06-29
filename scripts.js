@@ -101,6 +101,22 @@ function productPageAnimation() {
   const trace_honey_btn = document.querySelector(".trace_honey_btn");
   const product_popup = document.querySelector(".product_popup_section");
   const popup_close_btn = document.querySelector(".product_popup_section_close");
+  let product_popup_section_map = document.querySelector(".product_popup_section_map")
+  const honey_trace_search_btn = document.querySelector(".honey_trace_search_btn")
+  const honey_trace_inputBox = document.querySelector(".product_popup_section_input input");
+  let svgElement = document.querySelectorAll(".target");
+  const svgFilePath = './svg/map.svg';
+
+  fetch(svgFilePath)
+    .then(response => response.text())
+    .then(svgContent => {
+      product_popup_section_map.innerHTML = svgContent;
+      svgElement = document.querySelectorAll(".target");
+      // console.log(svgContent)
+    })
+    .catch(error => console.error('Error fetching SVG:', error));
+
+
   trace_honey_btn.addEventListener("click", () => {
     gsap.to(product_popup, {
       duration: 0.5,
@@ -117,9 +133,97 @@ function productPageAnimation() {
       opacity: 0,
       visibility: "hidden"
     });
+    svgElement.forEach((element) => {
+      element.style.fill = "#FADC76";
+    })
+    honey_trace_inputBox.value = "";
   });
+
+  
+  honey_trace_search_btn.addEventListener("click", () => {
+    const searchValue = honey_trace_inputBox.value.replace(/\s+/g, '');
+    let value = "12345678"
+    if (searchValue === value) {
+      svgElement.forEach((element) => {
+        element.style.fill = "#F6BE00";
+      })
+    }
+  })
+
 }
 
+
+
+
+
+
+//product section
+let productData = [{
+  img: "./img/product-1.png",
+  title: "Lorem, ipsum dolor.",
+  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptates!",
+  price: 100
+},
+{
+  img: "./img/product-1.png",
+  title: "Lorem, ipsum dolor.",
+  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptates!",
+  price: 100
+},
+{
+  img: "./img/product-1.png",
+  title: "Lorem, ipsum dolor.",
+  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptates!",
+  price: 100
+},
+{
+  img: "./img/product-1.png",
+  title: "Lorem, ipsum dolor.",
+  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptates!",
+  price: 100
+},
+{
+  img: "./img/product-1.png",
+  title: "Lorem, ipsum dolor.",
+  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptates!",
+  price: 100
+}, {
+  img: "./img/product-1.png",
+  title: "Lorem, ipsum dolor.",
+  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptates!",
+  price: 100
+}];
+
+let swiper_slide = document.querySelector(".swiper-wrapper")
+
+productData.forEach((product) => {
+  let slide = document.createElement("div");
+  slide.className = "swiper-slide";
+  slide.innerHTML = `
+    <div class="product_card">
+        <div class="product_img_container">
+              <img src=${product.img} alt="">
+              <div class="product_add_cart_icon notifyBtn">
+                    <i class="ri-add-line"></i>
+              </div>
+        </div>
+
+
+        <div class="product_title_container">
+              <h1 class="product_title">${product.title}</h1>
+              <h3 class="product_desc">
+                    ${product.desc}
+              </h3>
+              <h4 class="product_price">
+                    <div class="product_price_title">price</div>
+                    <div class="product_price_money">$${product.price}</div>
+              </h4>
+
+        </div>
+  </div>
+  `
+  swiper_slide.appendChild(slide);
+})
 // about us section
 let historyBox_data = [{
   img: "./img/honeyHistory-1.jpg",
@@ -292,19 +396,24 @@ function gotoTopBtn() {
 
 }
 //add to cart notification
-function notificationPopup(){
+function notificationPopup() {
   document.addEventListener("DOMContentLoaded", function () {
-    const notifyBtn = document.getElementById("notifyBtn");
+    const notifyBtn = document.querySelectorAll(".notifyBtn");
     const notification = document.getElementById("notification");
-  
-    notifyBtn.addEventListener("click", function () {
-      notification.classList.add("show");
-  
-  
-      setTimeout(function () {
-        notification.classList.remove("show");
-      }, 2000);
+
+    notifyBtn.forEach((btn)=>{
+      btn.addEventListener("click", function () {
+        notification.classList.add("show");
+        setTimeout(function () {
+          notification.classList.remove("show");
+        }, 1000);
+    })
+
     });
   });
-  
+
 }
+
+
+productPageAnimation()
+notificationPopup()
