@@ -58,7 +58,7 @@ function navbarAnimation() {
   if(screenWidth < 475){
     close.addEventListener('click', () => {
       gsap.to(extented_nav, {
-        top: -1700,
+        top: -2200,
         duration: 1.5,
         ease: "expo.out"
       })
