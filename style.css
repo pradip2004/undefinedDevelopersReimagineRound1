@@ -60,7 +60,7 @@
 }
 
 .slide_rext_group_text {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #5A4522;
     padding: 1.5vw 1vw;
 }
@@ -981,7 +981,7 @@ input:focus {
 }
 
 .slide4_text_group2 {
-    bottom: 20%;
+    bottom: 15%;
     right: 20%;
 }
 
@@ -1032,10 +1032,11 @@ input:focus {
 .slide_text_group_text {
     width: 12rem;
     opacity: 0.8;
+    font-size: 1.2rem;
 }
 
 .slide_text_group_title {
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     font-weight: 600;
     color: #5A4522;
 }
@@ -1118,12 +1119,12 @@ input:focus {
 
 .footer_waves {
     position: absolute;
-    top: -48%;
+    top: -45%;
     z-index: -1;
 }
 
 .footer_waves>img {
-    width: 99vw;
+    width: 100vw;
 }
 
 .footer_left_img img {

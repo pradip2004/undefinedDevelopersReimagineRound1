@@ -67,7 +67,7 @@
     .right_container .bee_img {
         position: absolute;
         top: -8%;
-        left: 0%;
+        left: 15%;
     }
 
     .bee_img>img {
@@ -77,8 +77,8 @@
 
     .right_container .hero_img>img {
         /* position: absolute; */
-        width: 202vw;
-        height: 200vw;
+        width: 172vw;
+        height: 170vw;
         margin-top: -2%;
     }
 
@@ -187,90 +187,13 @@
 }
 
 /* *********HONEY NEUTRATION SECTION******** */
-.honey_neutration_section {
-    background-color: rgb(219, 209, 209);
-    position: relative;
-    height: 150vh;
-    margin-top: 50vw;
-}
 
-.honey_neutration_section_bgtext {
-    width: 100%;
-}
-.honey_neutration_bgtext {
-    font-size: 50vw;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.31);
-    text-align: center;
-}
-
-.honey_neutration_img>img {
-    transform: scale(1.3) rotate(-10deg) translateY(10%);
-}
-
-.honey_neutration_overlay_1 {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    transform: rotate(90deg);
-}
-
-.honey_neutration_overlay_text_1 {
-    top: 25%;
-    left: 7%;
-    transform: rotate(10deg);
-}
-.honey_neutration_overlay_3 {
-    position: absolute;
-    top: 30%;
-    right: 10%;
-    transform: rotate(-60deg);
-
-}
-
-.honey_neutration_overlay_text_3 {
-    top: 20%;
-    right: 7%;
-    transform: rotate(-10deg);
-}
-
-.honey_neutration_overlay_text {
-    font-size: 4rem;
-}
-
-.honey_neutration_overlay_2 {
-    position: absolute;
-    top: 60%;
-    left: 10%;
-    transform: rotate(100deg) scaleX(-1);
-}
-
-.honey_neutration_overlay_text_2 {
-    top: 78%;
-    left: 5%;
-    transform: rotate(5deg);
-    
-}
-
-.honey_neutration_overlay_4 {
-    position: absolute;
-    top: 60%;
-    right: 20%;
-    transform: scaleY(-1) rotate(-40deg);
-}
-
-.honey_neutration_overlay_text_4 {
-    top: 75%;
-    right: 5%;
-    transform: rotate(10deg);
-
-}
 
 /* *********BEE SECTION******** */
 
 .bee_section {
     width: 200vw;
-    height: 200vh;
+    height: 100vh;
     position: relative;
 }
 
@@ -391,7 +314,7 @@
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     .btn {
         font-size: 1.5vw;
         padding: 1.5vw 2.5vw;
@@ -399,7 +322,7 @@
     }
 
     .heading_title {
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         color: #5A4522;
     }
 
@@ -439,8 +362,8 @@
     }
 
     .right_container .hero_img>img {
-        width: 27rem;
-        height: 25rem;
+        width: 24rem;
+        height: 22rem;
         margin-top: -5%;
         margin-left: 5%;
     }
@@ -451,8 +374,8 @@
     }
 
     .right_container .bee_img {
-        top: 4%;
-        left: 8%;
+        top: 0%;
+        left: 20%;
     }
 
     /* *********PRODUCT SECTION******** */
@@ -548,7 +471,7 @@
     }
 
     .about_honey_historyBox {
-        width: 90%;
+        width: 100%;
     }
 
     .about_honey_historyBox_desc {
@@ -560,66 +483,16 @@
     }
 
     /* *********HONEY NEUTRATION SECTION******** */
-    .honey_neutration_bgtext {
-        font-size: 7rem;
-    }
-
-    .honey_neutration_img>img {
-        transform: scale(0.8);
-    }
-
-    .honey_neutration_overlay_1 {
-        width: 7rem;
-    }
-
-    .honey_neutration_overlay_2 {
-        width: 7rem;
-    }
-
-    .honey_neutration_overlay_3 {
-        width: 7rem;
-    }
-
-    .honey_neutration_overlay_4 {
-        width: 7rem;
-        right: 35%;
-    }
-
-    .honey_neutration_overlay_text {
-        font-size: 1.6rem;
-    }
-
-    .honey_neutration_overlay_text_1 {
-        top: 28%;
-        left: 18%;
-        transform: rotate(10deg);
-    }
-
-    .honey_neutration_overlay_text_2 {
-        top: 68%;
-        left: 10%;
-        transform: rotate(10deg);
-
-    }
-
-    .honey_neutration_overlay_text_3 {
-        top: 24%;
-        right: 12%;
-        transform: rotate(20deg);
-    }
-
-    .honey_neutration_overlay_text_4 {
-        top: 60%;
-        right: 23%;
-        transform: rotate(-10deg);
-
-    }
+    
 
     /* *********BEE SECTION******** */
-    .bee_section_img_cover>img {
-        clip-path: circle(15% at 30% 52%);
+    .bee_section_title {
+        width: 300px;
+        font-size: 2.5vw;
     }
-
+    .bee_section_desc {
+        font-size: 2vw;
+    }
     /* *********ABOUT US SECTION******** */
     .slide-img {
         width: 12rem;
@@ -699,6 +572,9 @@
         bottom: 10%;
         left: 40%;
     }
+    .slide_rext_group_text{
+        font-size: 2.2vw;
+    }
 
     /* *********CONTACT US SECTION******** */
     .contact_us_section {
@@ -712,7 +588,7 @@
     }
 
     .contect_us_section_left {
-        padding: 3.5vw 0;
+        padding: 6.5vw 0;
     }
 
     .contect_us_section_title {
@@ -734,7 +610,7 @@
     }
 
     .footer_waves {
-        top: -28%;
+        top: -25%;
     }
 
     .footer_waves>img {
@@ -827,8 +703,8 @@
     }
 
     .hero_heading h1 {
-        font-size: 6rem;
-        line-height: 6.1rem;
+        font-size: 5rem;
+        line-height: 5.1rem;
         /* margin-top: -20%; */
     }
 
@@ -850,8 +726,8 @@
     }
 
     .right_container .bee_img {
-        top: 3%;
-        left: 5%;
+        top: -5%;
+        left: 18%;
     }
 
     /* *********PRODUCT SECTION******** */
@@ -915,6 +791,12 @@
         font-size: 1.3vw;
         width: 35%;
     }
+    /* bee section  */
+    .bee_section_desc {
+        width: 30vw;
+        font-size: 1.5vw;
+        font-weight: 500;
+    }
 
     /* *********ABOUT HONEY SECTION******** */
     .about_honey_section {
@@ -956,65 +838,8 @@
     }
 
     /* *********HONEY NEUTRATION SECTION******** */
-    .honey_neutration_bgtext {
-        font-size: 8rem;
-    }
+ 
 
-    .honey_neutration_img>img {
-        transform: scale(0.9);
-    }
-
-    .honey_neutration_overlay_1 {
-        width: 8rem;
-        left: 25%;
-        top: 35%;
-    }
-
-    .honey_neutration_overlay_2 {
-        width: 8rem;
-        left: 25%;
-        top: 50%;
-    }
-
-    .honey_neutration_overlay_3 {
-        width: 8rem;
-        right: 25%;
-    }
-
-    .honey_neutration_overlay_4 {
-        width: 8rem;
-        right: 35%;
-    }
-
-    .honey_neutration_overlay_text {
-        font-size: 1.8rem;
-    }
-
-    .honey_neutration_overlay_text_1 {
-        top: 30%;
-        left: 21%;
-        transform: rotate(10deg);
-    }
-
-    .honey_neutration_overlay_text_2 {
-        top: 69%;
-        left: 15%;
-        transform: rotate(10deg);
-
-    }
-
-    .honey_neutration_overlay_text_3 {
-        top: 25%;
-        right: 15%;
-        transform: rotate(20deg);
-    }
-
-    .honey_neutration_overlay_text_4 {
-        top: 60%;
-        right: 23%;
-        transform: rotate(-10deg);
-
-    }
 
     /* *********ABOUT US SECTION******** */
     .slide-img {
@@ -1118,7 +943,7 @@
     }
 
     .footer_waves {
-        top: -38%;
+        top: -33%;
     }
 
     .footer_waves>img {
