@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
 
 /* *********REUSEABLE CLASSES******** */
 .section {
@@ -639,100 +647,6 @@ input:focus {
 
 
 /* *********HONEY NEUTRATION SECTION******** */
-.honey_neutration_section {
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    margin-top: 10vw;
-}
-
-.honey_neutration_section_bgtext {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
-
-}
-
-.honey_neutration_bgtext {
-    font-size: 10rem;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.31);
-    text-align: center;
-}
-
-.honey_neutration_img {
-    /* background-color: red; */
-    width: fit-content;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-55%, -50%);
-}
-
-.honey_neutration_img>img {
-    transform: scale(1.2);
-}
-
-.honey_neutration_overlay_1 {
-    position: absolute;
-    top: 30%;
-    left: 20%;
-    transform: rotate(70deg);
-}
-
-.honey_neutration_overlay_2 {
-    position: absolute;
-    top: 50%;
-    left: 20%;
-    transform: rotate(100deg) scaleX(-1);
-}
-
-.honey_neutration_overlay_3 {
-    position: absolute;
-    top: 30%;
-    right: 22%;
-}
-
-.honey_neutration_overlay_4 {
-    position: absolute;
-    top: 50%;
-    right: 30%;
-    transform: scaleY(-1);
-}
-
-.honey_neutration_overlay_text {
-    font-size: 2rem;
-    color: #5A4522;
-    text-transform: capitalize;
-    position: absolute;
-}
-
-.honey_neutration_overlay_text_1 {
-    top: 30%;
-    left: 20%;
-    transform: rotate(10deg);
-}
-
-.honey_neutration_overlay_text_2 {
-    top: 78%;
-    left: 15%;
-    transform: rotate(-10deg);
-
-}
-
-.honey_neutration_overlay_text_3 {
-    top: 25%;
-    right: 18%;
-    transform: rotate(-10deg);
-}
-
-.honey_neutration_overlay_text_4 {
-    top: 65%;
-    right: 25%;
-    transform: rotate(10deg);
-
-}
 
 
 
