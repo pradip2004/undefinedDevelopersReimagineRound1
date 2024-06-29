@@ -304,23 +304,23 @@ function updateYear(year) {
 
 
 // bee section
-function beeSectionAnimation(){
+
   const clipPaths = [
     "inset(0)",
     "circle(10% at 57.5% 27%)",
-    "circle(10% at 33% 65%)",
-    "circle(10% at 60.5% 74%)",
-    "circle(6% at 54% 48%)",
+    "circle(7% at 30% 75%)",
+    "circle(10% at 35% 55%)",
+    "circle(10% at 40% 80%)",
     "circle(100%)",
     // "circle(100% at 50% 50%)"
     "inset(0)"
   ];
   const titles = [
     "",
-    "White woman",
-    "Charrua Indigenous",
-    "Jaguar",
-    "Montevideo Hill",
+    "A DAY IN THE LIFE OF A WORKER BEE",
+    "A DAY IN THE LIFE OF A WORKER BEE",
+    "A DAY IN THE LIFE OF A WORKER BEE",
+    "A DAY IN THE LIFE OF A WORKER BEE",
     " "
   ];
   const descriptions = [
@@ -329,23 +329,23 @@ function beeSectionAnimation(){
       position: ""
     },
     {
-      text: "In the foreground, we see a woman with Caucasian features representing the homeland—a white, pure, radiant, and civilized homeland ascending triumphantly. Created in the image and likeness of a Europe that embodies everything the nation should admire and pursue for success.",
+      text: "Foraging worker bees fly from their hive (sometimes miles away) to gather nectar from flowers and other blooming vegetation",
       left: "5%",
       top: "70%"
   
     },
     {
-      text: "She is seated on a rock, at a higher level than the rest of the symbolic elements. She has a fabric draped over her body with the stripes of the national flag printed on it, stained with the blood of the Charrúa people. A flag that represents the patrician project of a nation-state born from the Charrúa genocide.",
-      left: "5%",
+      text: "Once enough nectar is collected, the bees bring it back to the hive.",
+      left: "50%",
       top: "30%"
     },
     {
-      text: "In the background or second layer, we see the stereotyped figure of an indigenous person in a fallen posture, looking up at the resplendent homeland.",
+      text: "The nectar is chewed up and deposited into honeycomb wax cells. (npr.org)     The honey is still wet and not the familiar consistency.",
       left: "50%",
-      top: "40%"
+      top: "80%"
     },
     {
-      text: "The woman is sitting on a jaguar skin, perhaps a rug that the indigenous person obediently placed for her to sit on. The jaguar skin represents the most dangerous and wild animal of these lands, which the indigenous person killed for and because of her.",
+      text: "Once the honey is ready, the bees cap and seal the cell to keep it clean.",
       left: "5%",
       top: "20%"
     },
@@ -385,10 +385,8 @@ function beeSectionAnimation(){
   
   });
   
-}
 
 //about us section
-function horizontalScroll(){
   gsap.to(".slide", {
     scrollTrigger: {
       trigger: ".about_section_container",
@@ -400,7 +398,7 @@ function horizontalScroll(){
     xPercent: -300,
     ease: Power4
   })
-}
+
 
 
 //footer section
@@ -440,4 +438,20 @@ homePageAnimation()
 navbarAnimation()
 productPageAnimation()
 notificationPopup()
-horizontalScroll()
+
+
+// load svg in slide2
+const slide2 = document.querySelector(".slide2");
+const svgFilePath = './svg/missonArrow2.svg';
+fetch(svgFilePath)
+  .then(response => response.text())
+  .then(svgContent => {
+    slide2.innerHTML += svgContent;
+  })
+  .catch(error => console.error('Error fetching SVG:', error));
+
+  
+
+  
+  
+
