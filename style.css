@@ -1,7 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quando&family=Quicksand:wght@300..700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--primary-font);
 }
 body{
     overflow-x: hidden;
@@ -9,8 +12,21 @@ body{
 ::-webkit-scrollbar {
     display: none;
   }
-  
-  
+:root{
+    --primary-color: #F6BE00;
+    --secondary-color: #FADC76;
+    --tertiary-color:  #5A4522;
+    --white-color: #fff;
+    --black-color: #000;
+    --primary-font: "Quicksand", sans-serif;
+    --heading-font: "Quando", serif;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 /* *********REUSEABLE CLASSES******** */
 .section {
@@ -21,14 +37,15 @@ body{
 
 .heading_title {
     font-size: 2.5vw;
+    font-family: var(--heading-font);
     font-weight: 600;
     text-transform: capitalize;
-    color: #5A4522;
+    color: var(--tertiary-color);
 }
 
 .small_section {
     padding: 1vw 7vw;
-    background-color: #F6BE00;
+    background-color: var(--primary-color);
     width: 100%;
     height: 40vh;
     margin: 10vh 0;
@@ -38,18 +55,20 @@ body{
     font-size: 1vw;
     font-weight: 500;
     text-transform: uppercase;
-    color: #5A4522;
-    background-color: #FADC76;
+    color: var(--tertiary-color);
+    background-color: var(--secondary-color);
     border: none;
     padding: 1vw 2vw;
     cursor: pointer;
     margin-top: 1.5vw;
+    font-family: var(--primary-font);
 }
 
 .slide_overlay_heading {
     font-size: 8vw;
     text-transform: uppercase;
-    color: #5A4522;
+    font-family: var(--heading-font);
+    color: var(--tertiary-color);
     text-align: center;
     opacity: 0.4;
 }
@@ -59,18 +78,21 @@ body{
     width: 20rem;
     min-height: 5rem;
     display: flex;
+    font-family: var(--primary-font);
 }
 
 .slide_text_group_num {
     width: 3rem;
     height: 3rem;
     top: 0;
+    font-family: var(--primary-font);
 }
 
 .slide_rext_group_text {
-    font-size: 1.5rem;
-    color: #5A4522;
+    font-size: 1.3rem;
+    color: var(--tertiary-color);
     padding: 1.5vw 1vw;
+    font-family: var(--primary-font);
 }
 
 
@@ -90,7 +112,7 @@ body{
 }
 
 .extented_nav {
-    background-color: #F6BE00;
+    background-color: var(--primary-color);
     width: 100%;
     height: 60vh;
     position: absolute;
@@ -125,11 +147,12 @@ body{
 .extented_nav_part1 .video_details {
     display: flex;
     align-items: center;
-    color: #5A4522;
+    color: var(--tertiary-color);
     justify-content: space-between;
     width: 25vw;
     font-size: 0.8vw;
     margin-top: 1vw;
+    font-family: var(--primary-font);
     /* background-color: gray; */
 }
 
@@ -162,7 +185,8 @@ body{
     font-size: 3vw;
     font-family: "default-font";
     font-weight: 100;
-    color: #5A4522;
+    color: var(--tertiary-color);
+    font-family: var(--primary-font);
     /* background-color: bisque; */
 }
 
@@ -173,7 +197,8 @@ body{
 
 /* *********HERO SECTION******** */
 .hero_section {
-    background-color: rgb(214, 176, 79);
+    /* background-color: rgb(214, 176, 79); */
+    background-color: var(--secondary-color);
     min-height: 100vh;
 
 }
@@ -225,14 +250,17 @@ body{
     font-size: 5.7rem;
     line-height: 5.7rem;
     margin-top: 2.5vw;
-    color: rgb(46, 34, 2);
+    font-weight: 500;
+    font-family: var(--heading-font);
+    color: var(--tertiary-color);
 }
 
 .hero_heading p {
     font-size: 1.8rem;
     width: 80%;
     margin-top: 1vw;
-    color: rgb(46, 34, 2);
+    color: var(--tertiary-color);
+    font-family: var(--primary-font);
 }
 
 .right_container .bee_img {
@@ -265,7 +293,7 @@ body{
     /* background-color: rebeccapurple; */
     position: absolute;
     top: -50%;
-    left: -60%;
+    left: -50%;
     width: 35vw;
     z-index: 10;
     
@@ -322,11 +350,11 @@ body{
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #F6BE00 !important;
+    color: var(--primary-color) !important;
 }
 
 .product_card {
-    background-color: rgb(254, 254, 254);
+    background-color: var(--white-color);
     width: 100%;
     position: relative;
     height: 100%;
@@ -336,7 +364,7 @@ body{
 .product_img_container {
     height: 80%;
     width: 100%;
-    background-color: #FADC76;
+    background-color: var(--secondary-color);
     position: absolute;
 }
 
@@ -350,13 +378,13 @@ body{
 .product_add_cart_icon {
     width: 2.5vw;
     height: 2.5vw;
-    background-color: #F6BE00;
+    background-color: var(--primary-color);
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5vw;
-    color: #5A4522;
+    color: var(--tertiary-color);
     z-index: 5;
     border-radius: 50%;
     cursor: pointer;
@@ -369,7 +397,7 @@ body{
     width: 100%;
     bottom: -32%;
     position: absolute;
-    background-color: #5A4522;
+    background-color: var(--tertiary-color);
     transition: all 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
     display: flex;
     align-items: center;
@@ -382,10 +410,11 @@ body{
     font-size: 1.2vw;
     font-weight: 500;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--white-color);
     width: 100%;
     text-align: center;
     line-height: 2.5vw;
+    font-family: var(--heading-font);
 }
 
 .product_desc {
@@ -393,17 +422,19 @@ body{
     width: 100%;
     text-align: center;
     line-height: 1vw;
-    color: #ffffff;
+    color: var(--white-color);
+    font-family: var(--primary-font);
 }
 
 .product_price {
     padding: 0.5vw 1.2vw;
     width: 100%;
-    color: white;
+    color: var(--white-color);
     font-size: 1vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: var(--primary-font);
 }
 
 .product_title_container:hover {
@@ -422,10 +453,12 @@ body{
 }
 
 .product_track_title {
-    color: #5A4522;
+    color: var(--tertiary-color);
     font-size: 3.5vw;
     width: 70%;
     text-align: center;
+    font-family: var(--heading-font);
+    font-weight: 500;
     line-height: 3.8vw;
 }
 
@@ -444,12 +477,13 @@ body{
     top: 7%; /* Adjust based on button position */
     right: 5%;
     background-color: #FADC76;
-    color: #5A4522;
+    color: var(--tertiary-color);
     padding: 15px;
     border-radius: 5px;
     display: none; /* Initially hidden */
     z-index: 1000;
     opacity: 0;
+    font-family: var(--primary-font);
     transition: opacity 0.5s, transform 0.5s;
   }
   
@@ -468,7 +502,7 @@ body{
     z-index: 10;
     width: 50rem;
     height: 35rem;
-    background-color: #5A4522;
+    background-color: var(--tertiary-color);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -488,8 +522,9 @@ body{
 
 .product_popup_section_desc {
     width: 40%;
-    background-color: white;
+    background-color: var(--white-color);
     padding: 0.5vw;
+    font-family: var(--primary-font);
     border-radius: 10px;
 }
 
@@ -525,6 +560,7 @@ body{
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     font-size: 1vw;
+    font-family: var(--primary-font);
 
 }
 input:focus {
@@ -534,7 +570,7 @@ input:focus {
     border: none;
     font-size: 1vw;
     margin-left:-.8vw;
-    background-color: #fff;
+    background-color: var(--white-color);
     padding: 0.6vw 1vw;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -559,7 +595,7 @@ input:focus {
     padding: 2vw 7vw;
     top: 0;
     left: 0;
-    background-color: #FADC76;
+    background-color: var(--secondary-color);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -568,14 +604,14 @@ input:focus {
 }
 
 .about_honey_title {
-    font-size: 4rem;
+    font-size: 3.5rem;
 }
 
 .about_honey_year_title {
     font-size: 8rem;
     font-weight: 500;
     text-transform: uppercase;
-    color: #5A4522;
+    color: var(--tertiary-color);
     width: 100%;
     text-align: center;
     line-height: 2.5vw;
@@ -584,14 +620,14 @@ input:focus {
 .about_honey_img_container {
     height: 40vh;
     width: 30vw;
-    background-color: #5A4522;
+    background-color: var(--tertiary-color);
 }
 
 
 
 .about_honey_section_right {
     width: 50%;
-    background-color: white;
+    background-color: var(--white-color);
     padding: 2vw 7vw;
 }
 
@@ -613,8 +649,8 @@ input:focus {
 .about_honey_historyBox {
     width: 80%;
     height: 25vh;
-    border: 1px solid #F6BE00;
-    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    background-color: var(--white-color);
     border-radius: 50px;
     display: flex;
     overflow: hidden;
@@ -641,7 +677,7 @@ input:focus {
     padding: 1vw;
     display: flex;
     align-items: center;
-    color: #5A4522;
+    color: var(--tertiary-color);
     font-weight: 500;
 }
 
@@ -669,7 +705,7 @@ input:focus {
 .bee_section_img_cover {
     width: 100%;
     height: 100vh;
-    background-color: #fff;
+    background-color: var(--white-color);
     position: absolute;
 }
 
@@ -685,7 +721,7 @@ input:focus {
     align-items: center;
     font-weight: 600;
     justify-content: flex-start;
-    color: #000000;
+    color: var(--black-color);
     transition: all 0.2s;
 }
 
@@ -694,7 +730,7 @@ input:focus {
     height: 30vh;
     font-size: 1.4vw;
     font-weight: 500;
-    color: #000000;
+    color: var(--black-color);
     position: absolute;
     top: 30%;
     left: 5%;
@@ -710,7 +746,7 @@ input:focus {
 
 .about_section_container {
     height: 400vh;
-    background-color: #FADC76;
+    background-color: var(--secondary-color);
     position: relative;
 }
 
@@ -739,7 +775,7 @@ input:focus {
 .slide-img {
     width: 15rem;
     height: 15rem;
-    background-color: #ecc94b;
+    background-color: var(--primary-color);
     /* Equivalent to bg-yellow-500 */
     position: absolute;
     top: 50%;
@@ -810,7 +846,7 @@ input:focus {
 }
 
 .slide2_text_group1 {
-    top: 20%;
+    top: 10%;
     left: 20%;
 }
 .slide2_img4{
@@ -819,20 +855,20 @@ input:focus {
     rotate: -20deg;
 }
 .slide2_text_group2 {
-    top: 20%;
+    top: 15%;
     right: 20%;
 }
 
 
 
 .slide2_text_group3 {
-    bottom: 15%;
+    bottom: 10%;
     left: 10%;
 }
 
 .slide2_text_group4 {
     left: 55%;
-    top: 57%;
+    top: 59%;
 }
 
 .slide2_text_group4>.slide_rext_group_text {
@@ -890,7 +926,7 @@ input:focus {
 }
 
 .slide4_text_group2 {
-    bottom: 15%;
+    bottom: 12%;
     right: 20%;
 }
 
@@ -947,7 +983,7 @@ input:focus {
 .slide_text_group_title {
     font-size: 1.7vw;
     font-weight: 600;
-    color: #5A4522;
+    color: var(--tertiary-color);
 }
 
 
@@ -982,7 +1018,9 @@ input:focus {
 }
 
 .contect_us_section_title {
-    color: #5A4522;
+    color: var(--tertiary-color);
+    font-weight: 500;
+    font-family: var(--heading-font);
     font-size: 3.5vw;
     width: 90%;
     text-align: left;
@@ -992,7 +1030,7 @@ input:focus {
 
 .contect_us_section_text {
     font-size: 1rem;
-    color: #5A4522;
+    color: var(--tertiary-color);
     width: 15rem;
     text-transform: uppercase;
     text-align: right;
@@ -1003,7 +1041,7 @@ input:focus {
 .footer_section {
     width: 100%;
     margin-top: 25vw;
-    background-color: #FADC76;
+    background-color: var(--secondary-color);
     height: 70vh;
     display: flex;
     justify-content: space-between;
@@ -1128,7 +1166,7 @@ input:focus {
     font-size: 2vw;
     font-family: "default-font";
     font-weight: 100;
-    color: #5A4522;
+    color: var(--tertiary-color);
     /* background-color: bisque; */
 }
 
@@ -1137,7 +1175,7 @@ input:focus {
 }
 
 .footer_text_part2 {
-    color: #5A4522;
+    color: var(--tertiary-color);
     font-size: 1.2rem;
     text-align: center;
     /* margin: 1vw 0; */
@@ -1150,12 +1188,12 @@ input:focus {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F6BE00;
+    background-color: var(--primary-color);
     margin-right: 1vw;
 }
 
 .social_link>i {
-    color: #5A4522;
+    color: var(--tertiary-color);
     font-size: 1rem;
 }
 

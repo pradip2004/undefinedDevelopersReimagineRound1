@@ -173,37 +173,37 @@ function productPageAnimation() {
 //product section
 let productData = [{
   img: "./img/product-1.png",
-  title: "Lorem, ipsum dolor.",
-  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptates!",
+  title: "Naked Wild Honey",
+  desc: "Naked Wild Honey Preserves Nature's Essence, Unfiltered and Pure. Experience Full-bodied Flavor and Natural Goodness, Minimally Processed for Authenticity.",
   price: 100
 },
 {
-  img: "./img/product-1.png",
-  title: "Lorem, ipsum dolor.",
-  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptates!",
+  img: "./img/product-2.png",
+  title: "Busy Bee",
+  desc: "Barkman Honey: 50+ Years of Pure Quality, Delivering Nature's Finest Honey. Busy Bee is Traditionally proceed Natural Honey in Various Varieties.",
   price: 100
 },
 {
-  img: "./img/product-1.png",
-  title: "Lorem, ipsum dolor.",
-  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptates!",
+  img: "./img/product-3.png",
+  title: "Pure ‘N Simple",
+  desc: "Pure 'N Simple is Light Amber Bulk Honey, True Source Certified®, Perfect for Culinary Blends. Exclusively at Walmart in 80 oz (5 LB) Jugs.",
   price: 100
 },
 {
-  img: "./img/product-1.png",
-  title: "Lorem, ipsum dolor.",
-  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptates!",
+  img: "./img/product-4.png",
+  title: "Thrifty Bee",
+  desc: "Accessible Quality: Thrifty Bee Honey, True Source Certified®, Rich Flavor in an 8 oz Container. Sweetness for Every Budget.",
   price: 100
 },
 {
-  img: "./img/product-1.png",
-  title: "Lorem, ipsum dolor.",
-  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptates!",
+  img: "./img/product-5.png",
+  title: "Sweer Select Molasses",
+  desc: "Deep in colour and rich in flavour, Unsulphured Sweetness from Fresh Sugarcane is comes from our Sweet Select Molasses. Pure Process, No Additives, available in 1-Gallon Jug.",
   price: 100
 }, {
-  img: "./img/product-1.png",
-  title: "Lorem, ipsum dolor.",
-  desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptates!",
+  img: "./img/product-6.png",
+  title: "Sweet Select Agave",
+  desc: "Sweet Select Agave is light blue agave made from the Weber Azul blue agave plant. This agave is light in colour, mildly sweet in flavour and incredibly versatile in recipes",
   price: 100
 }];
 
@@ -242,20 +242,20 @@ let historyBox_data = [{
   img: "./img/honeyHistory-1.jpg",
   desc: "Dutch biologist and microscopist Jan Swammerdam’s study of honeybee anatomy and behavior began, providing a strong foundation for future bee studies."
 }, {
-  img: "./img/honeyHistory-1.jpg",
-  desc: "Dutch biologist and microscopist Jan Swammerdam’s study of honeybee anatomy and behavior began, providing a strong foundation for future bee studies."
+  img: "./img/honeyHistory-7.jpg",
+  desc: "Arthur Dobbs published the first explanation of the relationship between bees and flowers and the pollination process."
 }, {
-  img: "./img/honeyHistory-1.jpg",
-  desc: "Dutch biologist and microscopist Jan Swammerdam’s study of honeybee anatomy and behavior began, providing a strong foundation for future bee studies."
+  img: "./img/honeyHistory-3.jpg",
+  desc: "Centrifugal honey extractor was invented which revolutionized honey packing by quickly and efficiently removing honey from the hive frames."
 }, {
-  img: "./img/honeyHistory-1.jpg",
-  desc: "Dutch biologist and microscopist Jan Swammerdam’s study of honeybee anatomy and behavior began, providing a strong foundation for future bee studies."
+  img: "./img/honeyHistory-4.jpg",
+  desc: "Alarmed at the damage tracheal mites were doing to honey bees in Europe,    the United States Congress passed a Honey Bee Restriction Act which halted importation of bees to prevent the spread of tracheal mites. "
 }, {
-  img: "./img/honeyHistory-1.jpg",
-  desc: "Dutch biologist and microscopist Jan Swammerdam’s study of honeybee anatomy and behavior began, providing a strong foundation for future bee studies."
+  img: "./img/honeyHistory-5.jpg",
+  desc: "Dr. Eva Crane, a widely renown female scientist, bee researcher and author, established the Bee Research Association (BRA), which became an international organization in 1976 (IBRA)."
 }, {
-  img: "./img/honeyHistory-1.jpg",
-  desc: "Dutch biologist and microscopist Jan Swammerdam’s study of honeybee anatomy and behavior began, providing a strong foundation for future bee studies."
+  img: "./img/honeyHistory-6.jpg",
+  desc: "Varroa mites arrive, causing U.S. beekeepers to lose 50-80% of their colonies. Varroa mites slowly kill a hive by piercing the bee's body and sucking out its bodily fluids."
 }]
 
 let about_honey_right_content = document.querySelector(".about_honey_section_right_content");
@@ -279,7 +279,7 @@ historyBox_data.forEach((historyBox) => {
 
 let historyBox = document.querySelectorAll(".about_honey_historyBox");
 console.log(historyBox)
-const years = ["1990", "1995", "2000", "2005", "2010", "2015"];
+const years = ["1673", "1750", "1865", "1922", "1949", "1987"];
 const screenWidth = window.outerWidth;
 // console.log(screenWidth)
 if(screenWidth < 475){
