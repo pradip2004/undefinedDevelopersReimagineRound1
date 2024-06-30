@@ -178,30 +178,30 @@ let productData = [{
   price: 100
 },
 {
-  img: "./img/product-2.png",
+  img: "./img/product-4.png",
   title: "Busy Bee",
   desc: "Barkman Honey: 50+ Years of Pure Quality, Delivering Nature's Finest Honey. Busy Bee is Traditionally proceed Natural Honey.",
   price: 100
 },
 {
-  img: "./img/product-3.png",
+  img: "./img/product-2.png",
   title: "Pure ‘N Simple",
   desc: "Pure 'N Simple is Light Amber Bulk Honey, True Source Certified®, Perfect for Culinary Blends. Exclusively at Walmart in 80 oz (5 LB).",
   price: 100
 },
 {
-  img: "./img/product-4.png",
+  img: "./img/product-3.png",
   title: "Thrifty Bee",
   desc: "Accessible Quality: Thrifty Bee Honey, True Source Certified®, Rich Flavor in an 8 oz Container. Sweetness for Every Budget.",
   price: 100
 },
 {
-  img: "./img/product-5.png",
+  img: "./img/product-6.png",
   title: "Sweer Molasses",
   desc: "Deep in colour and rich in flavour, Unsulphured Sweetness from Fresh Sugarcane is comes from our Sweet Select Molasses.",
   price: 100
 }, {
-  img: "./img/product-6.png",
+  img: "./img/product-5.png",
   title: "Sweet Agave",
   desc: "Sweet Select Agave is light blue agave made from the Weber Azul blue agave plant. This agave is light in colour, mildly sweet in flavour.",
   price: 100
