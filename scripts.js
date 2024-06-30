@@ -180,13 +180,13 @@ let productData = [{
 {
   img: "./img/product-2.png",
   title: "Busy Bee",
-  desc: "Barkman Honey: 50+ Years of Pure Quality, Delivering Nature's Finest Honey. Busy Bee is Traditionally proceed Natural Honey in Various Varieties.",
+  desc: "Barkman Honey: 50+ Years of Pure Quality, Delivering Nature's Finest Honey. Busy Bee is Traditionally proceed Natural Honey.",
   price: 100
 },
 {
   img: "./img/product-3.png",
   title: "Pure ‘N Simple",
-  desc: "Pure 'N Simple is Light Amber Bulk Honey, True Source Certified®, Perfect for Culinary Blends. Exclusively at Walmart in 80 oz (5 LB) Jugs.",
+  desc: "Pure 'N Simple is Light Amber Bulk Honey, True Source Certified®, Perfect for Culinary Blends. Exclusively at Walmart in 80 oz (5 LB).",
   price: 100
 },
 {

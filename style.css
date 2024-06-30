@@ -8,7 +8,9 @@
 }
 body{
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
 ::-webkit-scrollbar {
     display: none;
   }
@@ -418,7 +420,7 @@ video{
 }
 
 .product_desc {
-    font-size: 0.8vw;
+    font-size: 0.7vw;
     width: 100%;
     text-align: center;
     line-height: 1vw;
@@ -1190,6 +1192,11 @@ input:focus {
     justify-content: center;
     background-color: var(--primary-color);
     margin-right: 1vw;
+    transition: all 0.2s ease-in-out;
+}
+
+.social_link:hover{
+    transform: translateY(-5px);
 }
 
 .social_link>i {
