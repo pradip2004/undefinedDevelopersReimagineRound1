@@ -176,7 +176,7 @@ video{
     width: fit-content;
     padding: 0 0.5vw;
     position: relative;
-    height: 3.2vw;
+    height: 3.7vw;
     /* margin-bottom:0.6vw ; */
     overflow: hidden;
     text-transform: capitalize;
@@ -405,8 +405,9 @@ video{
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    padding: 1vw 1.2vw;
+    padding: 0.8vw 1.2vw;
 }
+
 
 .product_title {
     font-size: 1.2vw;
@@ -831,13 +832,13 @@ input:focus {
     width: 5vw;
 }
 .slide2_img1{
-    left: 25%;
+    left: 35%;
     top: 40%;
     rotate: 60deg;
 }
 
 .slide2_img2{
-    right: 23%;
+    right: 10%;
     top: 44%;
     rotate: 60deg;
 }

@@ -197,13 +197,13 @@ let productData = [{
 },
 {
   img: "./img/product-5.png",
-  title: "Sweer Select Molasses",
-  desc: "Deep in colour and rich in flavour, Unsulphured Sweetness from Fresh Sugarcane is comes from our Sweet Select Molasses. Pure Process, No Additives, available in 1-Gallon Jug.",
+  title: "Sweer Molasses",
+  desc: "Deep in colour and rich in flavour, Unsulphured Sweetness from Fresh Sugarcane is comes from our Sweet Select Molasses.",
   price: 100
 }, {
   img: "./img/product-6.png",
-  title: "Sweet Select Agave",
-  desc: "Sweet Select Agave is light blue agave made from the Weber Azul blue agave plant. This agave is light in colour, mildly sweet in flavour and incredibly versatile in recipes",
+  title: "Sweet Agave",
+  desc: "Sweet Select Agave is light blue agave made from the Weber Azul blue agave plant. This agave is light in colour, mildly sweet in flavour.",
   price: 100
 }];
 

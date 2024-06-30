@@ -72,12 +72,12 @@
     }
 
     .e_menu {
-        padding: 0 1vw;
-        height: 20.2vw;
+        padding: 0 0.5vw;
+        height: 22vw;
     }
 
     .e_menu h1 {
-        font-size: 20vw;
+        font-size: 18vw;
     }
 
     .heading_title {
@@ -567,11 +567,11 @@
     }
     .e_menu {
         padding: 0 0.5vw;
-        height: 6.2vw;
+        height: 7vw;
     }
     
     .e_menu h1 {
-        font-size: 6vw;
+        font-size: 5.9vw;
         /* background-color: bisque; */
     }
     
@@ -1302,7 +1302,7 @@
     }
 
     .product_title {
-        font-size: 1.5vw;
+        font-size: 1.2vw;
         line-height: 3.3vw;
     }
 
@@ -1416,7 +1416,8 @@
     }
 
     .slide_text_group {
-        width: 18rem;
+        width: 20rem;
+        /* background-color: red; */
     }
 
     .slide_text_group_num {
@@ -1469,7 +1470,7 @@
 
     .slide_text_group_text {
         font-size: 1.8vw;
-        width: 80%;
+        width: 90%;
     }
 
     .slide3_text_group1 {
@@ -1486,16 +1487,17 @@
 
     .slide3_text_group3 {
         flex-direction: column;
-        bottom: 10%;
+        bottom: 5%;
         left: 40%;
     }
 
     .slide_rext_group_text {
         font-size: 1.6vw;
+        
     }
 
     .slide4_text_group2 {
-        bottom: 10%;
+        bottom: 5%;
         right: 20%;
     }
 
@@ -1507,7 +1509,7 @@
     }
 
     .footer_waves {
-        top: -33%;
+        top: -38%;
     }
 
     .footer_waves>img {
@@ -1574,118 +1576,3 @@
 
 }
 
-/* 
-@media only screen and (min-width: 1440px) {
-    .heading_title {
-        font-size: 4vw;
-        color: #5A4522;
-    }
-
-
-    .hero_heading h1 {
-        font-size: 8rem;
-        line-height: 8.1rem;
-        margin-top: -4%;
-    }
-
-    .hero_heading p {
-        font-size: 2rem;
-        margin-bottom: 1vw;
-    }
-
-    .right_container .hero_img>img {
-        width: 39rem;
-        height: 37rem;
-        margin-top: -5%;
-        margin-left: 5%;
-    }
-
-    .product_track_overlay {
-        width: 8.5rem;
-        left: 63%;
-        top: 45%;
-    }
-
-    .product_popup_section {
-        width: 55rem;
-        height: 35rem;
-    }
-
-    .product_popup_section_close {
-        width: 4rem;
-        height: 4rem;
-    }
-
-    .about_honey_section_right {
-        padding: 2vw 7vw;
-    }
-
-    .about_honey_section_left {
-        padding: 2vw 7vw;
-    }
-
-    .about_honey_img_container {
-        height: 35vh;
-        width: 35vw;
-        margin-top: -2vw;
-    }
-
-    .honey_neutration_bgtext {
-        font-size: 10rem;
-    }
-
-    .honey_neutration_img>img {
-        transform: scale(1.2);
-    }
-
-    .honey_neutration_overlay_text {
-        font-size: 2rem;
-    }
-
-    .slide_text_group {
-        width: 24rem;
-    }
-
-    .slide_text_group_num {
-        width: 3.5rem;
-        height: 3.5rem;
-        top: 0;
-    }
-
-    .slide1_text_group1 {
-        top: 20%;
-        left: 10%;
-    }
-
-    .contect_us_section_text {
-        font-size: 1.2rem;
-        color: #5A4522;
-        width: 17rem;
-        text-transform: uppercase;
-        text-align: right;
-    }
-
-    .footer_bee_img {
-        width: 12rem;
-        height: 12rem;
-        top: -10%;
-        left: 18%;
-    }
-
-    .footer_flower_img {
-        bottom: 0;
-        height: 28rem;
-    }
-
-    .div3 {
-
-        padding: 3vw 8vw;
-        padding-right: 15vw;
-    }
-
-    .footer_text_part2 {
-        color: #5A4522;
-        font-size: 1.4rem;
-        text-align: center;
-    }
-} */
