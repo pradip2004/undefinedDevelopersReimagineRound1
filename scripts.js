@@ -66,7 +66,7 @@ function navbarAnimation() {
   }else{
     close.addEventListener('click', () => {
       gsap.to(extented_nav, {
-        top: -500,
+        top: -800,
         duration: 1.5,
         ease: "expo.out"
       })
