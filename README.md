@@ -48,4 +48,4 @@
 
 💫**Footer Section**
 
-![Home Page](./img/Footer%20Section.png)
+![Home Page](./img/Footer%20section.png)
